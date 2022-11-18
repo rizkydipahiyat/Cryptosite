@@ -20,12 +20,12 @@ const Homepage = () => {
 			</Title>
 			<Row>
 				<Col span={12}>
-					<Statistic title="Total Cryptocurrencies" value={globalStats.total} />
+					<Statistic title="Total Cryptocurrencies" value={globalStats?.total} />
 				</Col>
 				<Col span={12}>
 					<Statistic
 						title="Total Exchanges"
-						value={millify(globalStats.totalExchanges)}
+						value={millify(globalStats?.totalExchanges)}
 					/>
 				</Col>
 				<Col span={12}>
@@ -43,7 +43,7 @@ const Homepage = () => {
 				<Col span={12}>
 					<Statistic
 						title="Total Markets"
-						value={millify(globalStats.totalMarkets)}
+						value={millify(globalStats?.totalMarkets)}
 					/>
 				</Col>
 			</Row>
